@@ -6,7 +6,7 @@ def main():
     converted = convert_dict(result)
     formatted_output = format_output(converted, book_location, word_count)
 
-    
+
 # format the output and remove non-alpha characters
 def format_output(ordered_dict, path_to_book, counted_words):
     print(f'--- Begin report of {path_to_book}---')
@@ -26,7 +26,6 @@ def convert_dict(dic):
     ordered_dict = [{k:v} for k, v in to_tuples]
     return ordered_dict
 
-
 # count character occurances
 def count_characters(text):
     character_count = {}
@@ -37,7 +36,6 @@ def count_characters(text):
             character_count[character] = 1
     return character_count
  
-
 # counts the number of words in the book
 def count_words(text):
     count = 0
